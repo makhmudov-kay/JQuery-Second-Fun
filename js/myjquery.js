@@ -175,6 +175,7 @@ function jQ(params) {
     this.child = function () {
         for (let i = 0; i < this.element.length; i++) {
             this.element = this.element[i].children
+            console.log(this.element);
         }
         return this
     }
