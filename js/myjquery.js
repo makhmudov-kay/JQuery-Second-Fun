@@ -52,6 +52,8 @@ function jQ(params) {
         }
         return this
     }
+
+    /* ДОМАШНЕЕ ЗАДАНИЕ */
     this.addClass = function (className) {
         if (typeof className == "string") {
             for (let i = 0; i < this.element.length; i++) {
@@ -81,7 +83,7 @@ function jQ(params) {
             }
         } else {
             for (let i = 0; i < this.element.length; i++) {
-                this.element[i].style.width = this.element[0].style.width
+                return this.element[0].style.width
             }
         }
         return this
@@ -97,7 +99,7 @@ function jQ(params) {
             }
         } else {
             for (let i = 0; i < this.element.length; i++) {
-                this.element[i].style.height = this.element[0].style.height
+                return this.element[0].style.height
             }
         }
         return this
@@ -154,9 +156,9 @@ function jQ(params) {
         if (typeof className == "string") {
             for (let i = 0; i < this.element.length; i++) {
                 if (this.element[i].classList.contains(className)) {
-                    console.log(true);
+                    return true
                 } else {
-                    console.log(false);
+                    return false
                 }
             }
         }
